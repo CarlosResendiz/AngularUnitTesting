@@ -1,12 +1,14 @@
 import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { HeroComponent } from '../hero/hero.component';
 import { IterableChangeRecord_ } from '@angular/core/src/change_detection/differs/default_iterable_differ';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('HeroComponent (shallow tests)', () => {
   let fixture: ComponentFixture<HeroComponent>;
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [HeroComponent]
+      declarations: [HeroComponent],
+      schemas: [NO_ERRORS_SCHEMA]
     });
     fixture = TestBed.createComponent(HeroComponent);
   });
